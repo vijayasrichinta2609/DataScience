@@ -3,138 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Vijayasri Chinta - Portfolio</title>
+    <title>Vijayasri Chinta - Full-Stack AI Engineer</title>
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* Light background */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .footer-container {
+            background-color: black;
+            margin: auto;
+            overflow: hidden;
+            color: White;
+            font-size: 25px;
+            margin-bottom: -10px;
+        }
+        header {
+            background: #ffffff;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header-text h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #ff007f;
+        }
+        
+        .header-text p {
+            margin: 5px 0 0;
+            font-size: 1em;
+            color: #7f8c8d;
+        }
+        
+        .tab-container ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        
+        .tab-container li {
+            margin-left: 20px;
+        }
+        
+        .tab-container a {
+            text-decoration: none;
+            color: #ff007f;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .tab-container a:hover {
+            background-color: #ff007f;
+            color: #ffffff;
+        }
+        nav {
+            background: #ffffff; /* White nav for brightness */
+            color: #333;
+            padding: 10px 0;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav a {
+            color: #ff007f; /* Neon pink */
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s; /* Smooth transition for hover effect */
+        }
+        nav a:hover {
+            color: #00ffcc; /* Neon teal on hover */
+        }
+        section {
+            margin-top: 20px;
+            background: #ffffff; /* White sections for brightness */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Soft shadow */
+        }
+        h2 {
+            color: #ff007f; /* Neon pink */
+        }
+        footer {
+            background: #ffffff; /* White footer for brightness */
+            color: #333;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .project, .certification {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f2f2f2; /* Light gray for projects/certifications */
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow */
+        }
+        .project h3, .certification h3 {
+            margin-top: 0;
+        }
+
+        .tab-container {
+            display: flex; /* Use Flexbox for alignment */
+            justify-content: center; /* Center items horizontally */
+            align-items: center; /* Center items vertically */
+        }
+        
+        .tab-container ul {
+            list-style: none; /* Remove default list styling */
+            padding: 0; /* Remove padding */
+            display: flex; /* Use Flexbox for the list */
+        }
+        
+        .tab-container li {
+            margin: 0 15px; /* Space out the tabs */
+        }
+        
+        .tab-container a {
+            text-decoration: none; /* Remove underline from links */
+            color: #ff007f; /* Set link color */
+            font-weight: bold; /* Make text bold */
+            padding: 10px 15px; /* Add padding for clickable area */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+        }
+        
+        .tab-container a:hover {
+            background-color: #ff007f; /* Change background on hover */
+            color: #ffffff; /* Change text color on hover */
+        }
+    </style>
 </head>
-<style>
-
-body {
-    font-family: 'Avenir', sans-serif; /* Your chosen font */
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding: 0;
-    background-color: whitesmoke;
-    box-sizing: border-box;
-}
-
-.container {
-    margin: 0 auto;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-section {
-    padding: 10px 0;
-}
-
-h2 {
-    color: #333;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-    .awesome-button {
-      display: inline-block;
-      padding: 15px 25px;
-      font-size: 16px;
-      font-weight: bold;
-      text-align: center;
-      text-decoration: none;
-      background-color: #4caf50;
-      color: #ffffff;
-      border-radius: 8px;
-      transition: background-color 0.3s;
-    }
-    .awesome-button:hover {
-      background-color: #90EE90;
-      color: #000000;
-    }
-
-</style>
 <body>
-
     <header>
         <div class="container">
-            <h1>Vijayasri Chinta</h1>
-            <p>Data Scientist</p>
+            <div class="header-content">
+                <div class="header-text">
+                    <h1>Vijayasri Chinta</h1>
+                    <p>🌟 Full-Stack AI Engineer | Innovator in AI & Web Development | AWS Cloud Expert 🌟</p>
+                </div>
+                <nav class="tab-container">
+                    <ul>
+                        <li><a href="#projects">GitHub Projects</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="https://www.linkedin.com/in/vijayasri-chinta" target="_blank">LinkedIn</a></li>
+                        <li><a href="mailto:chintavijayasri@outlook.com">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <section id="about">
-        <div class="container">
+    <div class="container">
+        <section id="about">
             <h2>About Me</h2>
-            <p>I am a Data Scientist, equipped with a diverse skill set that spans the entire data science lifecycle. My proficiency extends from essential tasks such as web scraping, exploratory data analysis (EDA), and data cleaning to more advanced stages like hypothesis testing and the complete machine learning pipeline. I have hands-on experience in navigating intricate datasets and demonstrating a robust capability to build, validate, and deploy machine learning models effectively, leveraging tools such as Python, C++, scikit-learn, seaborn, and PyTorch. If your team is in search of an intern with a comprehensive understanding of Data Science processes, including Python, machine learning, C++, deep learning, scikit-learn, seaborn, and PyTorch, I am eager to apply my skills, passion, and dedication to contribute to innovative projects in the dynamic realm of Data Science.</p>
-        </div>
-    </section>
+            <p>Aspiring Full-Stack AI Engineer, passionate about revolutionizing the tech landscape through innovative AI-driven solutions and cutting-edge web applications. Combining expertise in agentic AI, advanced search systems, full-stack development, and cloud infrastructure to create intelligent, user-centric products.</p>
+        </section>
 
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
+        <section id="expertise">
+            <h2>Areas of Expertise</h2>
             <ul>
-                <li>Statistical Analysis</li>
-                <li>Machine Learning</li>
-                <li>Data Preparation</li>
-                <li>Exploratory Data Analysis</li>
-                <li>WebScrapping</li>
-                <li>Data Visualization</li>
-                <li>A/B Testing</li>
-                <!-- Add more skills as needed -->
+                <li>🚀 AI & Agentic Workflow Chatbots: Leveraging LangChain for sophisticated, autonomous task handling</li>
+                <li>💻 Dynamic Web Development: React.js for frontend, Flask API for robust backend solutions</li>
+                <li>🔍 RAG-Based Smart Search & Personalized Recommendations: Using MongoDB Atlas for enhanced context and accuracy</li>
+                <li>📊 Data Engineering: Experience with Snowflake and Databricks for large dataset processing</li>
+                <li>☁️ AWS Cloud Expertise: Proficient in AWS ecosystem, including ECR, EC2, EKS, and more</li>
             </ul>
-        </div>
-    </section>
+        </section>
 
-    <section id="Projects">
-        <section id="COVIDCaseAnalysis">
-            <h3>Project 1: COVIDCaseAnalysis</h3>
-            <p>In this COVID-19 data analysis project, we utilize machine learning to explore patterns in a diverse dataset ('covid_data.csv') across countries. Through data visualization, we uncover correlations and predict future trends, contributing to a deeper understanding of the pandemic's trajectory and implications.</p>
-            <a href="https://github.com/vijayasrichinta2609/COVIDCaseAnalysis" target="_blank" class="awesome-button">Visit Project</a>
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Languages: Python, Java, C++, JavaScript, SQL</li>
+                <li>Frameworks/Tools: LangChain, MongoDB, Flask API, React.js, Snowflake, Databricks</li>
+                <li>Cloud: AWS (EC2, ECR, EKS, S3, Lambda, CloudFormation)</li>
+                <li>DevOps: Docker, Kubernetes, CI/CD pipelines</li>
+                <li>AI/ML: RAG, Vector Databases, Large Language Models</li>
+            </ul>
         </section>
-    
-        <section id="StockPricePrediction">
-            <h3>Project 2: StockPricePrediction</h3>
-            <p>This project showcases the application of logistic regression to predict stock price movements, emphasizing the significance of accurate predictions for investors and traders. Using Python libraries like pandas, scikit-learn, and matplotlib/seaborn, it provides a comprehensive guide to building and visualizing predictive models. The importance lies in enabling timely decision-making, optimizing trading strategies, and adjusting portfolio allocations based on predicted price movements for profit maximization and risk minimization.</p>
-            <a href="https://github.com/vijayasrichinta2609/StockPricePrediction" target="_blank" class="awesome-button">Visit Project</a>
+
+        <!-- GitHub Projects Section -->
+        <section id="projects">
+            <h2>GitHub Projects</h2>
+            <div class="project">
+                <h3>Created a Stock Price Prediction project using Logistic Regression</h3>
+                <p>Developed a Stock Price Prediction project employing Supervised machine learning techniques( Logistic Regression), incorporating Pandas and NumPy for data manipulation, Scikit-learn for model implementation, and Matplotlib for visualization. Executed in Google Collab, the project demonstrated proficiency in leveraging diverse tools for comprehensive stock market analysis and prediction.</p>
+                <a href="https://github.com/vijayasrichinta2609/StockPricePrediction" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Designed and implemented a Virtual Memory Manager for an Advanced Operating Systems project</h3>
+                <p>Developed a Virtual Memory Manager in C++ for an Advanced Operating Systems project, focusing on key concepts like Virtual Memory Management, TLB implementation, Page Table management, and Page Replacement Algorithm integration. The project monitors resource usage, including TLB hits and page faults, aiming to create an efficient and high-performance virtual memory manager reflective of modern operating system principles.</p>
+                <a href="https://github.com/vijayasrichinta2609/VirtualMemoryManager" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Developed a PyTorch library tutorial project to enhance understanding and application of deep learning principles.</h3>
+                <p>Created a PyTorch tutorial project for deep learning understanding, highlighting PyTorch's popularity due to its dynamic graph, Python ease-of-use, extensive documentation, and growing pre-trained models. With a versatile framework supporting experimentation, research, and scalable applications, PyTorch's hybrid front-end, distributed training, and rich ecosystem prove invaluable in advancing deep learning despite some limitations.</p>
+                <a href="https://github.com/vijayasrichinta2609/PyTorchLib" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Pattern recognition using Logistic Regression on COVID-19 cases</h3>
+                <p>Developed a COVID-19 prediction project integrating Pandas for data manipulation, Scikit-learn for machine learning models, and Matplotlib/Seaborn for visualization. Executed in Google Collab, the project employed diverse machine learning techniques, including regression, time series analysis, classification, and clustering, resulting in valuable insights and accurate predictions for COVID-19 cases.</p>
+                <a href="https://github.com/vijayasrichinta2609/COVIDCaseAnalysis" target="_blank">View Project</a>
+            </div>
+           
+            
         </section>
-    
-        <section id="PyTorchLib">
-            <h3>Project 3: PyTorchLib</h3>
-            <p>PyTorch, a widely embraced deep learning framework, offers researchers and developers a robust platform with dynamic computational graphs and seamless automatic differentiation for neural network construction and training. With potent GPU acceleration and robust support for large datasets, PyTorch has gained popularity for its efficiency and versatility.</p>
-            <a href="https://github.com/vijayasrichinta2609/PyTorchLib" target="_blank" class="awesome-button">Visit Project</a>
+
+        <!-- Certifications Section -->
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="certification">
+                <h3>Intro to Deep Learning</h3>
+                <p>Kaggle</p>
+                <a href="https://www.kaggle.com/learn/certification/vchinta/intro-to-deep-learning" target="_blank">View Certificate</a>
+            </div>
+            <div class="certification">
+                <h3>Intro to Machine Learning</h3>
+                <p>Kaggle</p>
+                <a href="https://www.kaggle.com/learn/certification/vchinta/intro-to-machine-learning" target="_blank">View Certificate</a>
+            </div>
+            <div class="certification">
+                <h3>Pandas</h3>
+                <p>Kaggle</p>
+                <a href="https://www.kaggle.com/learn/certification/vchinta/pandas" target="_blank">View Certificate</a>
+            </div>
+            <div class="certification">
+                <h3>Supervised Machine Learning: Regression and Classification</h3>
+                <p>DeepLearning.AI</p>
+                <a href="https://www.coursera.org/account/accomplishments/verify/3YQQ7VT6KV6T" target="_blank">View Certificate</a>
+            </div>
+            <div class="certification">
+                <h3>Python (Basic) Certificate</h3>
+                <p>HackerRank</p>
+                <a href="https://www.hackerrank.com/certificates/5D88A139EF70" target="_blank">View Certificate</a>
+            </div>
+            <div class="certification">
+                <h3>Software Engineer Intern Certificate</h3>
+                <p>HackerRank</p>
+                <a href="https://www.hackerrank.com/certificates/4369E0F8033B" target="_blank">View Certificate</a>
+            </div>
+            <div class="certification">
+                <h3>Professional Program in Artificial Intelligence</h3>
+                <p>IIT Hyderabad Alumni Association</p>
+                <a href="#" target="_blank">View Certificate</a>
+            </div>
+            <div class="certification">
+                <h3>SQL (Basic) Certificate</h3>
+                <p>HackerRank</p>
+                <a href="https://www.hackerrank.com/certificates/821C8A2C7304" target="_blank">View Certificate</a>
+            </div>
         </section>
-    
-        <section id="VirtualMemoryManager">
-            <h3>Project 4: VirtualMemoryManager</h3>
-            <p>This project introduces a Virtual Memory Manager (VMM) for a 65,536-byte virtual address space, emphasizing efficient translation, page fault handling, and TLB optimization. Using a FIFO-based strategy, demand paging, and careful consideration of key constants, the system achieves high efficiency. Performance metrics validate successful translation and optimized resource usage, contributing a robust VMM architecture to operating systems.</p>
-            <a href="https://github.com/vijayasrichinta2609/VirtualMemoryManager" target="_blank" class="awesome-button">Visit Project</a>
-        </section>
-    
-    </section>
+
+    </div>
 
     <footer>
-        <div class="container">
-            <p>Contact: chintavijayasri@outlook.com</p>
-        </div>
+        <div class="footer-container">
+           <!-- Updated contact info -->
+           <p> Lets Connect! </p> 
+           <p>🔗 My Email: chintavijayasri@outlook.com </p> 
+       </div>
     </footer>
 
 </body>
